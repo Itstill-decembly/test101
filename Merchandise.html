@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends Merch Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(15, 15, 15, 0.8);
+            /* Made transparent */
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0AC8B9;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #0AC8B9;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0A323C;
+        }
+
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            overflow: hidden;
+            /* Prevents video overflow */
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures video fills the section */
+            z-index: -1;
+            /* Puts video behind content */
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            /* Dark overlay for readability */
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            position: relative;
+            /* Ensures text stays above video */
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .hero .btn {
+            background-color: #0AC8B9;
+            padding: 15px 30px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            position: relative;
+        }
+
+        .hero .btn:hover {
+            background-color: #0AC8B9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png"
+                height="100" width="100" alt="Logo">League of Legends
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="News.html">Esports</a></li>
+                <li><a href="Merchandise.html">Merchandise</a></li>
+            </ul>
+        </nav>
+    </header>
+    </section>
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="VALORANT Champions 2023 Anthem.mp4" type="video/mp4">
+
+        </video>
+
+    </section>
+    <!-- Shop Section -->
+    <section class="shop">
+        <h1>Featured Items</h1>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="https://merch.riotgames.com/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fdsfx7636%2Fconsumer_products%2Fac436461a435c782b71c976b1706b8def38b5de9-2560x2560.png&w=828&q=75"
+                    alt="Product 1">
+                <h3>Wingman Plush</h3>
+                <p>$29.99</p>
+                <p class="description">
+                    Wingman is the smartest of Gekko's creatures and capable of a
+                    wide variety
+                    of handy tasks including, but not limited to: planting the spike, defusing the spike, concussing
+                    enemy Agents, and the occasional bit of skateboarding. competent at a lot of things like: giving
+                    little hugs, holding boba, defending your couch spot, and
+                    providing moral support during your placement games.
+
+                </p>
+                <a href="https://merch.riotgames.com/en-us/product/wingman-plush/" class="add-to-cart">Shop Now</a>
+
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="https://merch.riotgames.com/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fdsfx7636%2Fconsumer_products%2F06598429356b0ce9d7fbd9e2f1f27f1f2fcf1d44-1080x1080.png&w=828&q=75"
+                    alt="Product 2">
+                <h3>Coin Emperor Tahm Kench Figure</h3>
+                <p>$34.99</p>
+                <p class="description">Craving the smell of coins over all other earthly delights, Tahm Kench rises from
+                    his river kingdom each Lunar Revel, seeking to barter with mortals.
+
+                    Ring in the new year with the Coin Emperor Tahm Kench Figure! With reverence, careful wording, and a
+                    whole lot of luck, maybe you too can strike a bargain for wealth with this demon from the depths.
+                </p>
+                <a href="https://merch.riotgames.com/en-us/product/coin-emperor-tahm-kench-figure/"
+                    class="add-to-cart2">Shop Now</a>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="https://merch.riotgames.com/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fdsfx7636%2Fconsumer_products%2F73eec446fad91ace6e0de6bea8ae18d7797c9f09-2560x2560.png&w=828&q=75"
+                    alt="Product 3">
+                <h3>Gaming Tee</h3>
+                <p>$79.99</p>
+                <p class="description">
+                    When all hope seems lost, bear witness to the turning of the tides and the DAWN OF THE DUELIST.
+
+                    Prepare to be entertained on the edge of your seat in the official VALORANT Masters Bangkok 2025
+                    Dawn of the Duelist Hoodie.
+
+                    Features:
+                </p>
+                <a href="https://merch.riotgames.com/en-us/product/vct25-masters-bangkok-dawn-duelist-hoodie/"
+                    class="add-to-cart3">Shop Now</a>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

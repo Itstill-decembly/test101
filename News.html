@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends Esports</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(15, 15, 15, 0.8);
+            /* Made transparent */
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0AC8B9;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #0AC8B9;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0A323C;
+        }
+
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            overflow: hidden;
+            /* Prevents video overflow */
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures video fills the section */
+            z-index: -1;
+            /* Puts video behind content */
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            /* Dark overlay for readability */
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            position: relative;
+            /* Ensures text stays above video */
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .hero .btn {
+            background-color: #0AC8B9;
+            padding: 15px 30px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            position: relative;
+        }
+
+        .hero .btn:hover {
+            background-color: #0AC8B9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png"
+                height="100" width="100" alt="Logo">League of Legends
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="News.html">Esports</a></li>
+                <li><a href="Merchandise.html">Merchandise</a></li>
+            </ul>
+        </nav>
+    </header>
+    </section>
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="Choose to Believe _ Worlds 2024 Event Trailer - League of Legends (2).mp4" type="video/mp4">
+
+        </video>
+
+
+    </section>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>League of Legends Esports</h1>
+            <p>Catch the action live from the world’s top teams!</p>
+            <a href="https://www.twitch.tv/riotgames" class="cta-button">Watch Now</a>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule">
+        <h2>Upcoming Matches</h2>
+        <div class="match-grid">
+            <!-- Match Card 1 -->
+            <div class="match-card">
+                <div class="match-time">19:00</div>
+                <div class="match-teams">
+                    <div class="team">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlWN7BDL8afzVcANjNzpMApStNee5zj_XToiPvpv5W&usqp=CAE&s"
+                            height="70" width="70" alt="Team 1 Logo">
+                        <span>T1</span>
+                    </div>
+                    <span class="vs">VS</span>
+                    <div class="team">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfGjYuW_5ZG5hR68oOIJJ0WYFb1biQs3IJdnfYgr5y9nAIurXOlavD1jeg-_FcaailaT8&usqp=CAU"
+                            height="70" width="70" alt="Team 2 Logo">
+                        <span>G2</span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Match Card 2 -->
+            <div class="match-card">
+                <div class="match-time">22:00</div>
+                <div class="match-teams">
+                    <div class="team">
+                        <img src="https://upload.wikimedia.org/wikipedia/vi/6/66/Bilibili_Gaming_logo_%282021%29.png"
+                            alt="Team 3 Logo">
+                        <span>BLG</span>
+                    </div>
+                    <span class="vs">VS</span>
+                    <div class="team">
+                        <img src="data:image/png;base64,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"
+                            alt="Team 4 Logo">
+                        <span>TES</span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add more match cards as needed -->
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 LoL Esports. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

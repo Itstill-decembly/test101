@@ -1,0 +1,590 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Style all links */
+li a {
+    color: #0AC8B9;
+    /* Default link color */
+    text-decoration: none;
+    /* Removes underline */
+}
+
+/* Style links on hover */
+li a:hover {
+    color: #0AC8B9;
+    /* Color changes when hovering */
+    text-decoration: underline;
+    /* Adds underline on hover */
+}
+
+/* Style visited links */
+a:visited {
+    color: #0AC8B9;
+    /* Color for visited links */
+
+}
+
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    /* Dark background like Riot's */
+    color: #ffffff;
+    /* White text */
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0f0f0f;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    color: #0AC8B9;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #0AC8B9;
+
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #0A323C;
+    text-decoration: underline;
+    /* Red accent like Riot's branding */
+}
+
+/* Shop Section */
+.shop {
+    padding: 40px;
+    text-align: center;
+}
+
+.shop h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #2a2a2a;
+    /* Slightly lighter dark for cards */
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    /* Subtle zoom effect like Riot's */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #ccc;
+    /* Lighter gray for price */
+    margin: 5px 0 10px;
+}
+
+.add-to-cart {
+    background-color: #0AC8B9;
+    /* Riot’s red accent */
+    color: #CDFAFA;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart:hover {
+    background-color: #0A323C;
+
+    /* Darker red on hover */
+}
+
+.add-to-cart2 {
+    background-color: #0AC8B9;
+    /* Riot’s red accent */
+    color: #CDFAFA;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart2:hover {
+    background-color: #0A323C;
+
+    /* Darker red on hover */
+}
+
+.add-to-cart3 {
+    background-color: #0AC8B9;
+    /* Riot’s red accent */
+    color: #CDFAFA;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart3:hover {
+    background-color: #0A323C;
+
+    /* Darker red on hover */
+}
+
+.product-detail {
+    font-size: smaller;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* styles.css */
+
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo2 {
+    color: #0AC8B9;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links2 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links2 li a {
+    color: #0AC8B9;
+
+    font-size: 16px;
+}
+
+.nav-links2 li a:hover {
+    color: #0A323C;
+    text-decoration: underline;
+    /* Red accent like Riot's branding */
+}
+
+
+/* Hero Section */
+.Champions {
+    height: 80vh;
+    background-image: url('https://via.placeholder.com/1920x1080');
+    /* Replace with your game art */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Champions::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+}
+
+.Champions-content {
+    position: relative;
+    z-index: 1;
+}
+
+.Champions h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+
+.Champions p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.cta-button {
+    background-color: #00d4ff;
+    color: #0a0e1a;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #00b3d9;
+}
+
+/* About Section */
+.about {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.text-block,
+.image-block {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-block img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* How to Play Section */
+.how-to-play {
+    padding: 60px 40px;
+    background-color: #121926;
+    /* Slightly lighter dark for contrast */
+    text-align: center;
+}
+
+.how-to-play h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.play-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.play-card {
+    background-color: #1a2336;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.play-card h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.play-card p {
+    color: #ccd6f6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #061229;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+}
+
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1a26;
+    /* Dark blue like LoL Esports */
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #071018;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0e6d2;
+    /* Goldish tint */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ccd6f6;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #1d9bf0;
+    /* Cyan accent */
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background-image: url('https://via.placeholder.com/1920x1080');
+    /* Replace with esports art */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+    color: #f0e6d2;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #ccd6f6;
+}
+
+.cta-button {
+    display: inline-block;
+    /* Makes the <a> behave like a button */
+    background-color: #1d9bf0;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    /* Removes underline */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #1780c8;
+}
+
+/* Schedule Section */
+.schedule {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.schedule h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #f0e6d2;
+}
+
+.match-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.match-card {
+    background-color: #1a2b3c;
+    /* Slightly lighter dark */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.match-time {
+    font-size: 18px;
+    color: #1d9bf0;
+    margin-bottom: 10px;
+}
+
+.match-teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.team span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vs {
+    font-size: 16px;
+    color: #ccd6f6;
+}
+
+.watch-button {
+    background-color: #f0e6d2;
+    color: #0d1a26;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.watch-button:hover {
+    background-color: #d9c8a9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #071018;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .match-teams {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

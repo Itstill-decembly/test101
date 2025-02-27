@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoL News</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(15, 15, 15, 0.8);
+            /* Made transparent */
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0AC8B9;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #0AC8B9;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0A323C;
+        }
+
+        /* Hero Section with Video */
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            overflow: hidden;
+            /* Prevents video overflow */
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures video fills the section */
+            z-index: -1;
+            /* Puts video behind content */
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            /* Dark overlay for readability */
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            position: relative;
+            /* Ensures text stays above video */
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .hero .btn {
+            background-color: #0AC8B9;
+            padding: 15px 30px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            position: relative;
+        }
+
+        .hero .btn:hover {
+            background-color: #0AC8B9;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #0AC8B9;
+        }
+
+        .content p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+    </style>
+  
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png"
+                height="100" width="100" alt="Logo">League of Legends
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="News.html">Esports</a></li>
+                <li><a href="Kao.html">News</a></li>
+                <li><a href="Merchandise.html">Merchandise</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- Featured News Section -->
+  <section class="featured-news">
+    <div class="featured-content">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mel_0.jpg" alt="Featured News" class="featured-image">
+      <div class="featured-text">
+        <h1>New Champion Reveal: the Soul's Reflection</h1>
+        <p>Mel Medarda is the presumed heir of the Medarda family, once one of the most powerful in Noxus. In appearance she is a graceful aristocrat, but beneath the surface lies a skilled politician who makes it her business to know everything about everyone she meets. After an encounter with the mysterious Black Rose, Mel discovered the depths of her mother's deception and, for once, faced a situation potentially beyond her control. With newly awakened magical abilities, she sailed home in search of answers—and though many still seek to temper the light within her, Mel's soul remains forever defiant.!</p>
+        <a href="https://www.leagueoflegends.com/en-us/champions/mel/" class="read-more">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Grid Section -->
+  <section class="news-grid">
+    <h2>Latest News</h2>
+    <div class="news-container">
+      <!-- News Card 1 -->
+      <div class="news-card">
+        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c3f2a65bb6e08f02105aab5257cff3b6240b003a-1920x1080.jpg" alt="News 1">
+        <div class="news-info">
+          <h3>Patch 15.4 Notes</h3>
+          <p>Balance changes, bug fixes, and more in the latest update.</p>
+          <a href="" class="read-more">Read More</a>
+        </div>
+      </div>
+      <!-- News Card 2 -->
+      <div class="news-card">
+        <img src="https://cdn.oneesports.gg/cdn-data/2023/11/LeagueOfLegends_Worlds2023_Finals_T1_SummonersCup.jpg" alt="News 2">
+        <div class="news-info">
+          <h3>Esports Finals Recap</h3>
+          <p>This is T1 and Faker's fifth Summoner's Cup.
+            After a month of fierce competition among the strongest teams in League of Legends (LoL) esports, this year's world champion has been crowned. South Korean juggernauts T1 triumphed against Bilibili Gaming in a 3-2 thriller in the grand finals to raise the Summoner’s Cup at the League of Legends World Championship 2024. !</p>
+          <a href="https://www.gosugamers.net/lol/news/73638-t1-are-the-worlds-2024-champions" class="read-more2">Read More</a>
+        </div>
+      </div>
+      <!-- News Card 3 -->
+      <div class="news-card">
+        <img src="https://static.invenglobal.com/upload/image/2021/01/20/i1611177422142572.jpeg" alt="News 3">
+        <div class="news-info">
+          <h3>Skin Spotlight: Lunar New Year</h3>
+          <p>Celebrate with these dazzling new skins.</p>
+          <a href="https://support-leagueoflegends.riotgames.com/hc/th/articles/25323643321747-League-of-Legends-Lunar-Revel-2024" class="read-more3">Read More</a>
+        </div>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 League of Legends. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
